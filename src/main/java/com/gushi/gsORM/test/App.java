@@ -15,7 +15,14 @@ public class App {
 
     public App () {
 
-        dbManager dbMg = new dbManagerSQLServer("localhost", "sa", "gushihao");
-        dbMg.deleteDB("sddd");
+        dbManager dbMg = new dbManagerSQLite();
+
+//        while (true) {
+//            dbMg.createDB("nihao");
+//            System.out.println("创建好了");
+//            dbMg.deleteDB("nihao");
+//            System.out.println("删除好了");
+//        }
+
     }
 }
